@@ -1,0 +1,19 @@
+::: Install AZOTE on Hyprland :::
+
+1) install these:
+$ sudo pacman -S swaybg
+$ sudo pacman -S azote
+
+------------------------------------
+
+2) Edit hyprland config:
+$ ~/.config/hypr/hyprland.conf
+
+uncomment (or delete!)
+# exec-once = wpaperd
+add this:
+exec-once = ~/.azotebg-hyprland
+
+3) remove (if present):
+sudo pacman -R wpaperd
+sudo rm -R ~/.config/wpaperd/

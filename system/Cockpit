@@ -1,0 +1,8 @@
+::: COCKPIT :::
+
+$ sudo pacman -S cockpit
+$ sudo systemctl enable --now cockpit.socket
+
+# on web browser:
+
+localhost:9090

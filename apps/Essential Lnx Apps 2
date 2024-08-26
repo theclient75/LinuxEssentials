@@ -1,0 +1,39 @@
+### LINUX ESSENTIALS ###
+-------------------------------------
+$ fastfetch	(system info)
+-------------------------------------
+$ btop	(system info)
+-------------------------------------
+$ ncdu <storage name>	(storage info)
+-------------------------------------
+$ tldr	(simplified apps manual)
+-------------------------------------
+$ clean	(system cleaner)
+aur:
+  git clone https://aur.archlinux.org/clean.git
+  cd clean
+  makepkg -si
+github:
+  git clone https://github.com/architalia/clean.git
+  cd clean
+  makepkg -si
+-------------------------------------
+$ nwg-look	(theme app)
+-------------------------------------
+$ tumbler	(thumbnail fix)
+-------------------------------------
+$ azote		(wallpaper picker)
+* install swaybg first*
+-------------------------------------
+$ hyprshot	(screenshot)
+  create bind: bind = $mainMod, PRINT, exec, hyprshot -m window
+    Examples:
+  capture a window                      `hyprshot -m window`
+  capture active window to clipboard    `hyprshot -m window -m active --clipboard-only`
+  capture selected monitor              `hyprshot -m output -m DP-1`
+-------------------------------------
+$ googler	(google search cli)
+-------------------------------------
+$ mlocate/plocate
+$ updatedb
+$ locate "whatever"

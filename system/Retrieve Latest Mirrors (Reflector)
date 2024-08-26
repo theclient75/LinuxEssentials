@@ -1,0 +1,8 @@
+Backup Current Mirror List:
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+
+Retrieve latest N mirrors and sort by download rate:
+sudo reflector --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
+Verify:
+cat /etc/pacman.d/mirrorlist

@@ -1,0 +1,22 @@
+::: Connect Android To Arch Linux Via USB :::
+https://www.linuxfordevices.com/tutorials/linux/connect-android-to-arch-via-usb
+
+sudo pacman -S mtpfs
+paru jmtpfs
+sudo pacman -S gvfs-mtp
+sudo pacman -Sy gvfs-gphoto2
+reboot
+
+###################################
+
+# Enable MTP Support with mtpfs
+
+$ sudo pacman -S mtpfs
+$ paru jmtpfs
+$ sudo pacman -S gvfs-mtp
+
+# Enable PTP Support
+
+$ sudo pacman -Sy gvfs-gphoto2
+
+$ reboot

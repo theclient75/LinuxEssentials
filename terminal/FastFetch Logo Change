@@ -1,0 +1,16 @@
+::: List Logo :::
+
+$ fastfetch --list-logos
+
+::: Test Logo :::
+syntax: fastfetch --logo LOGO-NAME
+example:
+$ fastfetch --logo arch
+
+::: Make Permanent :::
+syntax: fastfetch --'whatever-flags' --gen-config
+example:
+$ fastfetch --logo arch --gen-config
+
+subsequent logo chage:
+$ fastfetch --logo arch --gen-config-force

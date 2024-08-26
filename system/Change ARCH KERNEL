@@ -1,0 +1,52 @@
+Different types of kernels available for Arch Linux:
+
+1) MAINLINE kernel
+	package name: linux
+	(+) latest available kernel version
+2) LTS kernel
+	package name: linux-lts
+	(+) latest long-term support kernel
+	(+) stable
+	(-) slightly old
+3) HARDENED kernel
+	package name: linux-hardened
+	(+) security-focused
+4) PERFORMANCE-TUNED kernel
+	package name: linux-zen
+	(+) latest kernel
+	(+) tuned
+	(-) power costly
+
+--------------------------------------
+::: CHECK KERNEL VERSION :::
+
+$ uname -r
+
+::: INSTALL KERNEL of choice :::
+$ sudo pacman -S linux
+-or-
+$ sudo pacman -S linux-lts
+-or-
+$ sudo pacman -S linux-hardened
+-or-
+$ sudo pacman -S linux-zen
+
+--------------------------------------
+::: CONFIGURE GRUB :::
+
+$ sudo nano /etc/default/grub
+
+GRUB_DISABLE_SUBMENU=y
+GRUB_DEFAULT=saved
+GRUB_SAVEDEFAULT=true
+
+--------------------------------------
+::: RE_GENERATE GRUB :::
+
+$ sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+--------------------------------------
+::: FINISH setup :::
+
+: Reboot
+: Select kernel of choice

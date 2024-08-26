@@ -1,0 +1,19 @@
+:::Arch Error Solutions:::
+
+# Pacman is currently in use...
+$ sudo rm /var/lib/pacman/db.lck
+
+# No iCons in stock Hyprland...
+$ install "tumbler"
+$ or Change iCons themes
+
+# Add OPEN AS ROOT in Thunar
+  > Edit
+  > Configure Custom Actions
+  command: "thunar admin://%f"
+
+# WAYBAR Refresh
+  > pkill waybar && hyprctl dispatch exec waybar
+
+# MPV resume playback position
+$ echo "save-position-on-quit" >> ~/.config/mpv/mpv.conf

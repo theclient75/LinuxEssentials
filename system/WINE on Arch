@@ -1,0 +1,20 @@
+https://youtu.be/MYHSGp_KH9o?si=uHqY1lmLlDNWV6SN
+
+(1) update system with 'sudo pacman -Syu'
+
+(2) enable multilib
+
+> sudo nano /etc/pacman.conf
+
+* release (#) on the following lines:
+
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+
+(3) update system with 'sudo pacman -Syu'
+
+(4) install wine:
+❯ sudo pacman -S wine winetricks wine-mono wine-gecko
+
+(5) configure wine
+> wine wincfg
